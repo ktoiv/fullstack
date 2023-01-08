@@ -1,0 +1,27 @@
+GET http://localhost:3001/api/persons/
+
+###
+
+GET http://localhost:3001/api/persons/4
+
+###
+
+GET http://localhost:3001/info
+
+###
+POST http://localhost:3001/api/persons HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "testi mies",
+    "number": "12345679"
+}
+
+###
+POST http://localhost:3001/api/persons HTTP/1.1
+Content-Type: application/json
+
+{
+    //"name": "testi mies",
+    "number": "12345679"
+}
