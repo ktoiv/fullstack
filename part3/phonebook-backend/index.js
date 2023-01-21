@@ -1,5 +1,4 @@
 require('dotenv').config()
-console.log('haa')
 const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
