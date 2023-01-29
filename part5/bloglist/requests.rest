@@ -1,0 +1,58 @@
+GET http://localhost:3003/api/blogs/
+
+###
+POST http://localhost:3003/api/blogs HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYzYzQyMDA0ZWZlNjc3NmY4ODYzMjVhMiIsImlhdCI6MTY3NDI4OTg1MH0.lIC9fDQDmiOANJez3CfeHm5i8doHjtRf7q0tAsooa1Y
+
+{
+    "title": "siisti blogi 10",
+    "author": "Siisti Mies",
+    "url": "siistimies10.com",
+    "likes": 110
+}
+
+###
+GET http://localhost:3003/api/users HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3003/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "root",
+    "name": "Superuser",
+    "password": "*REDACTED*"
+}
+
+
+###
+POST http://localhost:3003/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "a",
+    "name": "Superuser",
+    "password": "*REDACTED*"
+}
+
+###
+POST http://localhost:3003/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "testi",
+    "name": "Superuser",
+    "password": "s"
+}
+
+
+###
+POST http://localhost:3003/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "root",
+    "password": "*REDACTED*"
+}
